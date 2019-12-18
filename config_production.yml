@@ -1,0 +1,5 @@
+db:
+  connection:
+app:
+  events_dir: 'EVENTS'
+  logs_dir: 'LOGS'

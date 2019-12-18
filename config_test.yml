@@ -1,0 +1,5 @@
+db:
+  connection: 'sqlite://db/database.sqlite3'
+app:
+  events_dir: 'EVENTS'
+  logs_dir: 'LOGS'

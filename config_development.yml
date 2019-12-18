@@ -1,0 +1,9 @@
+db:
+  database: 'event_maker_development'
+  user: 'postgres'
+  password: '123456'
+  host: 'localhost'
+  port: '5432'
+app:
+  destination_dir: 'EVENTS'
+  source_dir: 'LOGS'
