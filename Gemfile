@@ -1,0 +1,11 @@
+source 'https://rubygems.org'
+
+gem 'puma'
+gem 'rack'
+gem 'rake'
+gem 'sequel'
+gem 'sinatra'
+gem 'sinatra-contrib'
+gem 'sinatra-sequel'
+gem 'sqlite3'
+gem 'sucker_punch', '~> 2.0'
