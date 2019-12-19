@@ -2,19 +2,13 @@ GEM
   remote: https://rubygems.org/
   specs:
     backports (3.15.0)
-    chronic (0.10.2)
-    coderay (1.1.2)
     concurrent-ruby (1.1.5)
-    method_source (0.9.2)
     multi_json (1.14.1)
     mustermann (1.0.3)
     nio4r (2.5.2)
-    pry (0.12.2)
-      coderay (~> 1.1.0)
-      method_source (~> 0.9.0)
     puma (4.3.1)
       nio4r (~> 2.0)
-    rack (2.0.7)
+    rack (2.0.8)
     rack-protection (2.0.7)
       rack
     rake (13.0.1)
@@ -38,14 +32,11 @@ GEM
     sucker_punch (2.1.2)
       concurrent-ruby (~> 1.0)
     tilt (2.0.10)
-    whenever (1.0.0)
-      chronic (>= 0.6.3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  pry
   puma
   rack
   rake
@@ -55,7 +46,6 @@ DEPENDENCIES
   sinatra-sequel
   sqlite3
   sucker_punch (~> 2.0)
-  whenever
 
 BUNDLED WITH
    2.0.2
