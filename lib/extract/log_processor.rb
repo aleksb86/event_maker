@@ -1,9 +1,5 @@
 # frozen_string_literal: true
 
-# require './init'
-
-# Init.autoload
-
 module LogProcessor
   class Log
     attr_reader :file_path, :file_name

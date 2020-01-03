@@ -1,13 +1,12 @@
 # frozen_string_literal: true
 
 require 'sequel'
-require 'logger'
 require_relative './app/config'
 require_relative './support/initialization'
 
 desc 'Irb with preloaded dependencies and initialization'
-task :console do # TODO: ...
-  sh 'irb -r ./support/dependencies.rb -r ./support/initialization.rb'
+task :console do
+  sh 'ruby ./support/console.rb'
 end
 
 namespace :db do
@@ -50,6 +49,8 @@ end
 namespace :processing do
   desc 'Run asynchronous log files processing'
   task :run do
+    require_relative './support/dependencies'
+
     # Init.autoload
     Job.perform_async
   end

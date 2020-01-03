@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'logger'
+
 module Initialization
   CONNECTION_PARAMS = {
     user: Config.settings.db.user,
@@ -19,5 +21,3 @@ module Initialization
     end
   end
 end
-
-# Initialization.db_connect
