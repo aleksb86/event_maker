@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'sequel'
-require_relative './app/config'
+require_relative './support/extra/config'
 require_relative './support/initialization'
 
 desc 'Irb with preloaded dependencies and initialization'
@@ -51,7 +51,6 @@ namespace :processing do
   task :run do
     require_relative './support/dependencies'
 
-    # Init.autoload
     Job.perform_async
   end
 end

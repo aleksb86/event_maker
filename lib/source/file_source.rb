@@ -21,4 +21,10 @@ module FileSource
       ProcessedFile.create(name: name)
     end
   end
+
+  module ClassMethods
+    def unprocessed_log_files(dir)
+      
+    end
+  end
 end

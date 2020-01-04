@@ -3,6 +3,7 @@
 source 'https://rubygems.org'
 
 gem 'gorilla_patch', '~> 3.2', '>= 3.2.1'
+gem 'logger'
 gem 'pg'
 gem 'puma'
 gem 'rack', '>= 2.0.8'

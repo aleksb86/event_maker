@@ -10,10 +10,11 @@ module Dependencies
     ./app/models
     ./app/routes
     ./app/service
-    ./lib/extract
+    ./lib/source
+    ./lib/target
     ./lib/transform
-    ./lib/load
     ./lib/jobs
+    ./support/extra
   ].freeze
 
   class << self
@@ -23,10 +24,10 @@ module Dependencies
       end
     end
 
-    def load_core
-      require 'app'
-      require 'config'
-    end
+    # def load_core
+    #   require 'app'
+    #   # require 'config'
+    # end
 
     def do_autoload
       Zeitwerk::Loader.new.tap do |loader|
@@ -41,4 +42,4 @@ end
 
 Dependencies.set_load_path
 Dependencies.do_autoload
-Dependencies.load_core
+# Dependencies.load_core
