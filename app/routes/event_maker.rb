@@ -44,6 +44,7 @@ class EventMaker < Sinatra::Base
       @event_rule.destroy
       status 204
     end
+    # TODO: add endpoints for attribute_rules
   end
 
   error Sequel::MassAssignmentRestriction do

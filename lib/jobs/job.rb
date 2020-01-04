@@ -2,9 +2,9 @@
 
 class Job
   include SuckerPunch::Job
-  include LogProcessor
+  # include LogProcessor
 
   def perform
-    transform_logs
+    yield if block_given?
   end
 end

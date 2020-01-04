@@ -21,4 +21,10 @@ module FileSource
       ProcessedFile.create(name: name)
     end
   end
+
+  class LogDir
+    ABS_PATH = Config.settings.app.source_dirs.logs.freeze
+    MAX_FILES_AT_TIME = Config.settings.app.max_files_at_time
+    
+  end
 end

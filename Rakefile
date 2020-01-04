@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
 require 'sequel'
-require_relative './app/config'
+require_relative './support/extra/config'
 require_relative './support/initialization'
 
 desc 'Irb with preloaded dependencies and initialization'
 task :console do
-  sh 'ruby ./support/console.rb'
+  sh 'RACK_ENV=development ruby ./support/console.rb'
 end
 
 namespace :db do
@@ -46,12 +46,11 @@ namespace :db do
   end
 end
 
-namespace :processing do
+namespace :run do
   desc 'Run asynchronous log files processing'
-  task :run do
+  task :make_events_job do
     require_relative './support/dependencies'
 
-    # Init.autoload
-    Job.perform_async
+    MakeEventsJob.perform_async
   end
 end

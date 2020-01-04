@@ -12,12 +12,4 @@ class AttributeRule < Sequel::Model
     validates_presence %i[pattern name]
     validates_unique %i[event_rule_id name]
   end
-
-  def to_view
-    {
-      id: id,
-      name: name,
-      pattern: pattern
-    }
-  end
 end

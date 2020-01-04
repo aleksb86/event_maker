@@ -31,7 +31,7 @@ LOGS = [
 ].freeze
 # rubocop:enable Metrics/LineLength
 
-LOGS_DIR = Config.settings.app.source_dir
+LOGS_DIR = Config.settings.app.source_dirs.logs
 
 EVENT_RULES = {
   systemd: 'systemd\[\d+\]:',

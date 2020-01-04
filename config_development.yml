@@ -5,5 +5,8 @@ db:
   host: 'localhost'
   port: '5432'
 app:
-  destination_dir: 'EVENTS'
-  source_dir: 'LOGS'
+  max_files_at_time: 100
+  target_dirs:
+    events: 'EVENTS'
+  source_dirs:
+    logs: 'LOGS'
