@@ -1,5 +1,8 @@
 # Event Maker
 
+(Please dont use this project because it didnt ready)
+![Resource under construction](http://pngimg.com/uploads/under_construction/under_construction_PNG63.png)
+
 ## Description
 
 Event Maker is damned small solution for controlled log files processing. Based on Ruby web framework Sinatra.
